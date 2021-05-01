@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.RetraitController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" styleClass="#E45652">
          <children>
@@ -18,23 +18,18 @@
                <menus>
                   <Menu mnemonicParsing="false" text="GESTION USERS">
                      <items>
-                        <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" onAction="#GestionClient"  />
+                        <MenuItem fx:id="GestionClient" mnemonicParsing="false" onAction="#GestionClient" text="Gestion Clients" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
                      <items>
-                        <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onAction="#Virement"  />
-                        <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" onAction="#Versement"  />
+                        <MenuItem fx:id="Virement" mnemonicParsing="false" onAction="#Virement" text="Virement" />
+                        <MenuItem fx:id="Versement" mnemonicParsing="false" onAction="#Versement" text="Versement" />
                      </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="GESTION COMPTES">
-                    <items>
-                      <MenuItem fx:id="GestionCompte" mnemonicParsing="false" text="Gestion Comptes Clients"  />
-                    </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="LOG-OUT">
                      <items>
-                        <MenuItem fx:id="logout" mnemonicParsing="false" text="Log-out" onAction="#logout"  />
+                        <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log-out" />
                      </items>
                   </Menu>
                </menus>

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.uqac.controllers.AccueilAgentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.AccueilAgentController">
    <children>
       <Pane prefHeight="426.0" prefWidth="600.0" style="-fx-background-color: #056287;">
          <children>
@@ -18,19 +18,14 @@
                <menus>
                   <Menu mnemonicParsing="false" text="GESTION USERS">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Gestion Clients" />
+                        <MenuItem fx:id="GestionClient" mnemonicParsing="false" onAction="#GestionClient" text="Gestion Clients" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Virement" />
-                      <MenuItem mnemonicParsing="false" text="Versement" />
-                        <MenuItem mnemonicParsing="false" text="Retrait" />
-                    </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="GESTION COMPTES">
-                    <items>
-                      <MenuItem fx:id="CompteClient" mnemonicParsing="false" text="Gestion Compte Clients" />
+                        <MenuItem fx:id="Virement" mnemonicParsing="false" onAction="#Virement" text="Virement" />
+                      <MenuItem fx:id="Versement" mnemonicParsing="false" onAction="#Versement" text="Versement" />
+                        <MenuItem fx:id="Retrait" mnemonicParsing="false" onAction="#Retrait" text="Retrait" />
                     </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="LOG-OUT">

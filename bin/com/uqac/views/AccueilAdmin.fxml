@@ -15,8 +15,8 @@
          <menus>
             <Menu mnemonicParsing="false" text="GESTION USERS">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Gestion Agents" />
-                  <MenuItem mnemonicParsing="false" text="Gestion Clients" />
+                  <MenuItem fx:id="GestionAgent" mnemonicParsing="false" onAction="#GestionAgent" text="Gestion Agents" />
+                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" onAction="#GestionClient" text="Gestion Clients" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="LOG-OUT">

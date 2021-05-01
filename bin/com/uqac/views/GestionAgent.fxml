@@ -27,7 +27,7 @@
                     <columns>
                       <TableColumn fx:id="LoginC" prefWidth="75.0" text="LOGIN" />
                       <TableColumn fx:id="PasswordC" prefWidth="75.0" text="PASSWORD" />
-                        <TableColumn fx:id="DatenaissanceC" prefWidth="110.5" text="DATE NAISSANCE" />
+                        <TableColumn fx:id="DateNaissanceC" prefWidth="110.5" text="DATE NAISSANCE" />
                         <TableColumn fx:id="AdresseC" prefWidth="59.0" text="ADRESSE" />
                         <TableColumn fx:id="NumeroTelephoneC" prefWidth="135.0" text="NUMERO TELEPHONE" />
                         <TableColumn fx:id="RoleC" prefWidth="75.0" text="ROLE" />
@@ -46,12 +46,12 @@
         <menus>
           <Menu mnemonicParsing="false" text="GESTIONS USERS">
             <items>
-                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" />
+                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" onAction="#GestionClient" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="LOG-OUT">
             <items>
-              <MenuItem fx:id="Logout" mnemonicParsing="false" text="Log-out" />
+              <MenuItem fx:id="logout" mnemonicParsing="false" text="Log-out" onAction="#logout" />
             </items>
           </Menu>
         </menus>

@@ -33,19 +33,19 @@
         <menus>
           <Menu mnemonicParsing="false" text="GESTION USERS">
             <items>
-                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" />
+                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients " onAction="#GestionClient" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onaction="#Virement" />
-                  <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" />
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" onAction="#Virement" text="Virement" />
+                  <MenuItem fx:id="Versement" mnemonicParsing="false" onAction="#Versement" text="Versement" />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" onAction="#Retrait" text="Retrait" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="LOG-OUT">
             <items>
-              <MenuItem fx:id="Logout" mnemonicParsing="false" text="Log-out" />
+              <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log-out" />
             </items>
           </Menu>
         </menus>

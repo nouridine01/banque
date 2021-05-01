@@ -1,11 +1,11 @@
 package com.uqac.controllers;
 
-import java.awt.TextField;
+//import java.awt.TextField;
 
 import com.uqac.App;
 import com.uqac.dao.CompteDao;
 import com.uqac.metier.BanqueService;
-
+import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -17,15 +17,15 @@ public class VersementController {
 	String view;
 	String titre;
 	@FXML
-	private TextField NumeroCompte;
+	private TextField Numerocompte;
 	@FXML
-	private TextField Montant;
+	private TextField montant;
 	@FXML
 	private Button EffectuerVersement;
 	@FXML
 	private MenuItem Virement;
 	@FXML
-	private MenuItem retrait;
+	private MenuItem Retrait;
 	@FXML
 	private MenuItem GestionClients;
 	@FXML
@@ -80,8 +80,8 @@ public class VersementController {
 		@FXML
 		public void EffectuerVersement(ActionEvent event) {
 			
-			long NumC = Long.parseLong(NumeroCompte.getText());
-			long Mont = Long.parseLong(Montant.getText());
+			long NumC = Long.parseLong(Numerocompte.getText());
+			long Mont = Long.parseLong(montant.getText());
 			CompteDao dao = new CompteDao();
 			BanqueService Bank = new BanqueService();
 			if (dao.find(NumC) != null)

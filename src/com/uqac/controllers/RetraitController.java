@@ -1,6 +1,6 @@
 package com.uqac.controllers;
 
-import java.awt.TextField;
+import javafx.scene.control.TextField;
 
 import com.uqac.App;
 import com.uqac.dao.CompteDao;

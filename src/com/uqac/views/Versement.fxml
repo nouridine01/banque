@@ -16,21 +16,16 @@
         <menus>
           <Menu mnemonicParsing="false" text="GESTION USERS">
             <items>
-              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" onAction="#GestionClients" />
+              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onAction="#Virement" />
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" onAction="#Retrait" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="GESTION COMPTES">
-              <items>
-                <MenuItem fx:id="GestionCompte" mnemonicParsing="false" text="Gestion Compte Clients" />
-              </items>
-            </Menu>
-          <Menu fx:id="logout" mnemonicParsing="false" text="LOG-OUT" onAction="#logout" >
+          <Menu fx:id="logout" mnemonicParsing="false" text="LOG-OUT">
             <items>
               <MenuItem mnemonicParsing="false" text="Log-out" />
             </items>
@@ -42,8 +37,8 @@
             <Image url="@../../../images/51454036-paiement-vecteur-icône-le-style-est-bicolor-plat-symbole-cerclé-les-couleurs-bleu-et-gris-angles-de-fond-.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="NumeroCompte" layoutX="203.0" layoutY="181.0" promptText="Numero compte" />
-      <TextField fx:id="Montant" layoutX="203.0" layoutY="231.0" promptText="Montant" />
+      <TextField fx:id="Numerocompte" layoutX="203.0" layoutY="181.0" promptText="Numero compte" />
+      <TextField fx:id="montant" layoutX="203.0" layoutY="231.0" promptText="Montant" />
       <Button fx:id="EffectuerVersement" layoutX="216.0" layoutY="288.0" mnemonicParsing="false" onAction="#EffectuerVersement" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #E45652;" text="Effectuer versement" textFill="WHITE" />
       <Label layoutX="96.0" layoutY="185.0" text="Numero compte" textFill="WHITE" />
       <Label layoutX="96.0" layoutY="235.0" text="Montant" textFill="WHITE" />
