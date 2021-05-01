@@ -10,19 +10,19 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" styleClass="#E45652" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VersementController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" styleClass="#E45652" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.VersementController">
    <children>
       <MenuBar layoutY="-4.0" prefHeight="25.0" prefWidth="600.0">
         <menus>
           <Menu mnemonicParsing="false" text="GESTION USERS">
             <items>
-              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" />
+              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" onAction="#GestionClients" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onAction="#Virement" />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" onAction="#Retrait" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="GESTION COMPTES">
@@ -30,7 +30,7 @@
                 <MenuItem fx:id="GestionCompte" mnemonicParsing="false" text="Gestion Compte Clients" />
               </items>
             </Menu>
-          <Menu fx:id="Logout" mnemonicParsing="false" text="LOG-OUT">
+          <Menu fx:id="logout" mnemonicParsing="false" text="LOG-OUT" onAction="#logout" >
             <items>
               <MenuItem mnemonicParsing="false" text="Log-out" />
             </items>

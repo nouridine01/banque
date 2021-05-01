@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VirementController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.VirementController">
    <children>
       <MenuBar layoutX="-6.0" layoutY="-4.0" prefHeight="25.0" prefWidth="606.0">
         <menus>
@@ -21,7 +21,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
             <items>
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait"  />
               <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" />
             </items>
           </Menu>

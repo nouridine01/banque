@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="844.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionClientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="844.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.GestionClientController">
    <children>
       <ScrollPane layoutX="4.0" layoutY="64.0" prefHeight="294.0" prefWidth="481.0">
         <content>
@@ -44,14 +44,14 @@
           <Menu mnemonicParsing="false" text="GESTION USERS" />
           <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
-                  <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" />
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onAction="#Virement"  />
+                  <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" onAction="#Versement"  />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" onAction="#Retrait"  />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="LOG-OUT">
             <items>
-              <MenuItem fx:id="Logout" mnemonicParsing="false" text="Log-out" />
+              <MenuItem fx:id="logout" mnemonicParsing="false" text="Log-out" onAction="#logout"  />
             </items>
           </Menu>
         </menus>

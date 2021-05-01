@@ -27,7 +27,7 @@ public class ClientController {
 	@FXML
 	private TextField Nom;
 	@FXML
-	private PasswordField Prenom;
+	private TextField Prenom;
 	@FXML
 	private DatePicker DateNaissance;
 	@FXML

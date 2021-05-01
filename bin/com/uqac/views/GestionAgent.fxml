@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="918.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionAgentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="918.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.GestionAgentController">
    <children>
       <ScrollPane layoutX="5.0" layoutY="94.0" prefHeight="274.0" prefWidth="541.0">
         <content>
@@ -37,10 +37,10 @@
             </AnchorPane>
         </content>
       </ScrollPane>
-      <Button fx:id="SearchBtn" layoutX="168.0" layoutY="47.0" mnemonicParsing="false" onAction="#Search" style="-fx-background-color: #E45652;" text="Search" textFill="WHITE" />
+      <Button fx:id="SearchBtn" layoutX="168.0" layoutY="47.0" mnemonicParsing="false" onAction="#SearchBtn" style="-fx-background-color: #E45652;" text="Search" textFill="WHITE" />
       <Button fx:id="NouveauAgent" layoutX="5.0" layoutY="387.0" mnemonicParsing="false" onAction="#NouveauAgent" style="-fx-background-color: #E45652;" text="Nouveau Agent" textFill="WHITE" />
       <Button fx:id="ModifierAgent" layoutX="194.0" layoutY="387.0" mnemonicParsing="false" onAction="#ModifierAgent" style="-fx-background-color: #E45652;" text="Modifier Agent" textFill="WHITE" />
-      <Button fx:id="SupprimerAgent" layoutX="380.0" layoutY="387.0" mnemonicParsing="false" onAction="#SupprimerrAgent" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #E45652;" text="Supprimer Agent" textFill="WHITE" />
+      <Button fx:id="SupprimerAgent" layoutX="380.0" layoutY="387.0" mnemonicParsing="false" onAction="#SupprimerAgent" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #E45652;" text="Supprimer Agent" textFill="WHITE" />
       <TextField fx:id="SearchTxt" layoutX="5.0" layoutY="47.0" promptText="Search Agent" />
       <MenuBar layoutX="-9.0" layoutY="-5.0" prefHeight="25.0" prefWidth="929.0">
         <menus>

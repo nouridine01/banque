@@ -11,7 +11,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.ClientController">
    <children>
       <Label layoutX="86.0" layoutY="128.0" text="Nom" textFill="WHITE" />
       <Label layoutX="86.0" layoutY="177.0" text="Prenom" textFill="WHITE" />
@@ -38,7 +38,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onaction="#Virement" />
                   <MenuItem fx:id="Versement" mnemonicParsing="false" text="Versement" />
                   <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
             </items>
