@@ -46,12 +46,12 @@
         <menus>
           <Menu mnemonicParsing="false" text="GESTIONS USERS">
             <items>
-                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" onAction="#GestionClient" />
+                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" onAction="#GestionClient" text="Gestion Clients" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="LOG-OUT">
             <items>
-              <MenuItem fx:id="logout" mnemonicParsing="false" text="Log-out" onAction="#logout" />
+              <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log-out" />
             </items>
           </Menu>
         </menus>
@@ -128,6 +128,5 @@
             </HBox>
          </children>
       </VBox>
-      <Button fx:id="Valider" layoutX="700.0" layoutY="400.0" mnemonicParsing="false" onAction="#Valider" style="-fx-background-color: #E45652;" text="Valider" textFill="WHITE" />
    </children>
 </AnchorPane>

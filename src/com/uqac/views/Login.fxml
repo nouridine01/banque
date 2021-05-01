@@ -7,7 +7,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="577.0" style="-fx-background-color: #1c1918;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.LoginController">
 
    <children>
@@ -15,7 +14,7 @@
          <children>
             <TextField id="login" fx:id="login" layoutX="67.0" layoutY="151.0" promptText="Login" />
             <PasswordField fx:id="pwd" layoutX="67.0" layoutY="213.0" promptText="Password" />
-            <Button fx:id="sign" layoutX="67.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #E45652;" text="Sign In" textFill="#dad6d6" onAction="#signin"/>
+            <Button fx:id="sign" layoutX="67.0" layoutY="281.0" mnemonicParsing="false" onAction="#signin" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #E45652;" text="Sign In" textFill="#dad6d6" />
             <ImageView fitHeight="114.0" fitWidth="90.0" layoutX="97.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/avatar.png" />
