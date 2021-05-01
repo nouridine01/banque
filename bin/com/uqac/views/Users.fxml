@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" style="-fx-background-color: #056287;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UsersController">
+   <children>
+      <ImageView fitHeight="82.0" fitWidth="89.0" layoutX="226.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/user_icon-icons.com_66546.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="130.0" text="Login" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="174.0" text="Password" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="217.0" text="Date naissance" textFill="WHITE" />
+      <Label layoutX="69.0" layoutY="258.0" text="Adresse" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="300.0" text="Numero telephone" textFill="WHITE" />
+      <Label layoutX="68.0" layoutY="348.0" text="Role" textFill="WHITE" />
+      <TextField fx:id="Login" layoutX="184.0" layoutY="126.0" promptText="Login" />
+      <TextField fx:id="Adresse" layoutX="184.0" layoutY="254.0" promptText="Adresse" />
+      <TextField fx:id="NumeroTelephone" layoutX="184.0" layoutY="296.0" promptText="Numero telephone" />
+      <ComboBox fx:id="Role" layoutX="184.0" layoutY="344.0" prefWidth="150.0" promptText="Admin" />
+      <PasswordField fx:id="Password" layoutX="185.0" layoutY="170.0" promptText="Password" />
+      <DatePicker fx:id="DateNaissance" layoutX="186.0" layoutY="213.0" prefHeight="25.0" prefWidth="150.0" promptText="Date naissance" />
+      <Button fx:id="EnregistrerInfo" layoutX="251.0" layoutY="392.0" mnemonicParsing="false" onAction="#EnregistrerInfo" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #E45652;" text="Enregistrer les informations" textFill="WHITE" />
+      <MenuBar layoutX="-11.0" layoutY="-4.0" prefHeight="25.0" prefWidth="611.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="GESTION USERS">
+            <items>
+              <MenuItem fx:id="GestionAgent" mnemonicParsing="false" text="Gestion Agents" />
+                  <MenuItem fx:id="GestionClient" mnemonicParsing="false" text="Gestion Clients" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="LOG-OUT">
+            <items>
+              <MenuItem fx:id="Logout" mnemonicParsing="false" text="Log-out" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #056287;" styleClass="#E45652" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VersementController">
+   <children>
+      <MenuBar layoutY="-4.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="GESTION USERS">
+            <items>
+              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
+            <items>
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
+                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="GESTION COMPTES">
+              <items>
+                <MenuItem fx:id="GestionCompte" mnemonicParsing="false" text="Gestion Compte Clients" />
+              </items>
+            </Menu>
+          <Menu fx:id="Logout" mnemonicParsing="false" text="LOG-OUT">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Log-out" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="103.0" fitWidth="110.0" layoutX="227.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/51454036-paiement-vecteur-icône-le-style-est-bicolor-plat-symbole-cerclé-les-couleurs-bleu-et-gris-angles-de-fond-.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="NumeroCompte" layoutX="203.0" layoutY="181.0" promptText="Numero compte" />
+      <TextField fx:id="Montant" layoutX="203.0" layoutY="231.0" promptText="Montant" />
+      <Button fx:id="EffectuerVersement" layoutX="216.0" layoutY="288.0" mnemonicParsing="false" onAction="#EffectuerVersement" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #E45652;" text="Effectuer versement" textFill="WHITE" />
+      <Label layoutX="96.0" layoutY="185.0" text="Numero compte" textFill="WHITE" />
+      <Label layoutX="96.0" layoutY="235.0" text="Montant" textFill="WHITE" />
+   </children>
+</AnchorPane>

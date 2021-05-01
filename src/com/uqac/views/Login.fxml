@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="577.0" style="-fx-background-color: #1c1918;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uqac.controllers.LoginController">
+
+   <children>
+      <AnchorPane layoutX="288.0" layoutY="-4.0" prefHeight="407.0" prefWidth="289.0" style="-fx-background-color: #056287;">
+         <children>
+            <TextField id="login" fx:id="login" layoutX="67.0" layoutY="151.0" promptText="Login" />
+            <PasswordField fx:id="pwd" layoutX="67.0" layoutY="213.0" promptText="Password" />
+            <Button fx:id="sign" layoutX="67.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #E45652;" text="Sign In" textFill="#dad6d6" onAction="#signin"/>
+            <ImageView fitHeight="114.0" fitWidth="90.0" layoutX="97.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/avatar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="407.0" fitWidth="290.0" layoutX="-1.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/LoginImages.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

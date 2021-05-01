@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.esmt.controllers.AgentController">
+   <children>
+      <Pane prefHeight="426.0" prefWidth="600.0" style="-fx-background-color: #056287;">
+         <children>
+            <MenuBar layoutX="-5.0" prefHeight="27.0" prefWidth="606.0" style="-fx-padding: 0;">
+               <menus>
+                  <Menu mnemonicParsing="false" text="GESTION USERS">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Gestion Clients" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="GESTION TRANSACTIONS">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Virement" />
+                      <MenuItem mnemonicParsing="false" text="Versement" />
+                        <MenuItem mnemonicParsing="false" text="Retrait" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="GESTION COMPTES">
+                    <items>
+                      <MenuItem fx:id="CompteClient" mnemonicParsing="false" text="Gestion Compte Clients" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="LOG-OUT">
+                     <items>
+                        <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log-out" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Label layoutX="174.0" layoutY="61.0" prefHeight="21.0" prefWidth="319.0" text="BIENVENUE SUR LA PAGE AGENTS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="354.0" prefHeight="27.0" prefWidth="379.0" text="KNP Bank Vos ambitions sont les nôtres " textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="245.0" fitWidth="379.0" layoutX="120.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/banque-696x465.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
