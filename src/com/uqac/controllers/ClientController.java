@@ -1,12 +1,15 @@
 package com.uqac.controllers;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 import com.uqac.App;
 import com.uqac.dao.ClientDao;
+import com.uqac.dao.CompteDao;
 //import com.uqac.dao.UserDao;
 import com.uqac.entities.Client;
 //import com.uqac.entities.User;
+import com.uqac.entities.Compte;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,6 +23,7 @@ public class ClientController {
 	private String view;
 	private String titre;
 	private static ClientDao dao = new ClientDao();
+	private static CompteDao compteDao = new CompteDao();
 	@FXML
 	private MenuItem GestionClient;
 	@FXML
@@ -93,8 +97,15 @@ public class ClientController {
 	
 	public void EnregistrerInfo (ActionEvent event) {
 		
+		Compte c = new Compte();
+		c.setDate_creation( new Date());
+		c.setSolde(0);
 		Client client = recupererChamp();
-		dao.create(client);
+		client = dao.create(client);
+		c.setClient(client);
+		c=compteDao.create(c);
+		client.setCompte(c);
+		dao.update(client);
 		viderChamp();
 	}
 	

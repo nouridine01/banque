@@ -201,7 +201,7 @@ public class GestionAgentController {
 		
 		public void initRole() {
 			ObservableList<String> roles = FXCollections.observableArrayList();
-			roles.addAll("Agent");
+			roles.addAll("AGENT");
 			Role.setItems(roles);
 		}
 		
