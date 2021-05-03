@@ -48,8 +48,8 @@ public class UsersController {
 	@FXML
 	public void initialize() {
 	    Role.getItems().removeAll(Role.getItems());
-	    Role.getItems().addAll("Admin","Agent");
-	    Role.getSelectionModel().select("Admin");
+	    Role.getItems().addAll("ADMIN","AGENT");
+	    Role.getSelectionModel().select("ADMIN");
 	}
 
 	@FXML

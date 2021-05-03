@@ -16,7 +16,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="GESTION USERS">
             <items>
-              <MenuItem fx:id="GestionClients" mnemonicParsing="false" text="Gestion Clients" />
+              <MenuItem fx:id="GestionClient" mnemonicParsing="false" onAction="#GestionClient" text="Gestion Clients" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
@@ -25,7 +25,7 @@
                   <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
             </items>
           </Menu>
-          <Menu fx:id="logout" mnemonicParsing="false" text="LOG-OUT">
+          <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOG-OUT">
             <items>
               <MenuItem mnemonicParsing="false" text="Log-out" />
             </items>

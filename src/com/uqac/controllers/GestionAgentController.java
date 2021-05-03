@@ -1,5 +1,6 @@
 package com.uqac.controllers;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 //import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -35,7 +36,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 
-public class GestionAgentController {
+public class GestionAgentController implements Initializable{
 	
 		private String view;
 		private String titre;
@@ -154,6 +155,8 @@ public class GestionAgentController {
 			userSelected=null;
 			etatButtons(true);
 		}
+		
+		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			
 			initTable(1,"");
@@ -163,11 +166,7 @@ public class GestionAgentController {
 			TableAgent.getSelectionModel().selectedItemProperty().addListener(
 		            (observable, oldValue, newValue) -> {
 		           userSelected =(User) TableAgent.getSelectionModel().getSelectedItem();
-		           Alert info = new Alert(AlertType.INFORMATION);
-		           info.setTitle("super");
-		           info.setHeaderText("identifiant :"+userSelected.getId());
-		           info.showAndWait();     
-		           
+		       
 		           if(userSelected!=null) {
 		        	   etatButtons(false);
 		        	   remplirChamp();
@@ -191,12 +190,12 @@ public class GestionAgentController {
 				liste = FXCollections.observableArrayList(users);
 			}
 			TableAgent.setItems(liste);
-			LoginC.setCellValueFactory(new PropertyValueFactory<>("Login"));
-			PasswordC.setCellValueFactory(new PropertyValueFactory<>("Password"));
-			DateNaissanceC.setCellValueFactory(new PropertyValueFactory<>("Date Naissance"));
-			AdresseC.setCellValueFactory(new PropertyValueFactory<>("Adresse"));
-			NumeroTelephoneC.setCellValueFactory(new PropertyValueFactory<>("Numero Telephone"));
-			
+			LoginC.setCellValueFactory(new PropertyValueFactory<>("login"));
+			PasswordC.setCellValueFactory(new PropertyValueFactory<>("password"));
+			DateNaissanceC.setCellValueFactory(new PropertyValueFactory<>("date_naiss"));
+			AdresseC.setCellValueFactory(new PropertyValueFactory<>("adresse"));
+			NumeroTelephoneC.setCellValueFactory(new PropertyValueFactory<>("telephone"));
+			RoleC.setCellValueFactory(new PropertyValueFactory<>("role"));
 		}
 		
 		public void initRole() {
