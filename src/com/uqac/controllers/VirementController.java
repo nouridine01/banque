@@ -88,13 +88,10 @@ public class VirementController {
 			CompteDao dao = new CompteDao();
 			double Solde = dao.find(NumCE).getSolde();
 			BanqueService Bank = new BanqueService();
-			if (dao.find(NumCE) != null & dao.find(NumCB) != null & (Solde>Mont))
+			if (dao.find(NumCE) != null & dao.find(NumCB) != null)
 			{
 				Bank.virement(NumCE, NumCB, Mont);	 
-				Alert info = new Alert(AlertType.INFORMATION);
-			    info.setTitle("Virement");
-			    info.setHeaderText("Virement effectue");
-			    info.showAndWait();
+				
 			    CompteEmetteur.setText("");
 			    CompteBeneficiaire.setText("");
 			    Montant.setText("");
@@ -106,10 +103,10 @@ public class VirementController {
 		           info.setHeaderText("veuillez saisir des Informations valide");
 		           info.showAndWait();
 			}
-			App app = new App();
-			view="GestionClients";
-			titre="GESTION CLIENTS";
-			app.changeView(view, titre);
+//			App app = new App();
+//			view="GestionClient";
+//			titre="GESTION CLIENTS";
+//			app.changeView(view, titre);
 		}
 		
 

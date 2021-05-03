@@ -13,7 +13,7 @@ public aspect LoggerAspect {
 	Logger log = Logger.getLogger(this.getClass().getName());
 	FileHandler fh;  
     
-    pointcut logging(): call(* com.uqac.metier.IBanqueService+.*(..));
+    pointcut logging(): execution(* com.uqac.metier.IBanqueService+.*(..));
 	Object around() : logging(){ 
 		  
 		try {

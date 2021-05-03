@@ -82,13 +82,10 @@ public class RetraitController {
 		
 		BanqueService Bank = new BanqueService();
 		
-		if (dao.find(NumC) != null & (Solde>Mont))
+		if (dao.find(NumC) != null)
 		{
 			Bank.retrait(NumC,Mont);
-			Alert info = new Alert(AlertType.INFORMATION);
-		    info.setTitle("Retrait");
-		    info.setHeaderText("Retrait effectue");
-		    info.showAndWait();
+		
 		    NumeroCompte.setText("");
 		    Montant.setText("");
 		}
