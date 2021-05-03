@@ -21,8 +21,8 @@
           </Menu>
           <Menu mnemonicParsing="false" text="GESTIONS TRANSACTIONS">
             <items>
-              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" />
-                  <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" />
+              <MenuItem fx:id="Virement" mnemonicParsing="false" text="Virement" onAction="#Virement"/>
+              <MenuItem fx:id="Retrait" mnemonicParsing="false" text="Retrait" onAction="#Retrait"/>
             </items>
           </Menu>
           <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOG-OUT">

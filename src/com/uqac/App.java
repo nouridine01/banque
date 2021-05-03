@@ -52,7 +52,7 @@ public class App extends Application {
 		u.setPassword("passer");
 		//d.create(u);
 		BanqueService bs = new BanqueService();
-		bs.dan(5);
+		//bs.dan(5);
 		//System.out.println(u.getId());
 		Application.launch(args);
 	}

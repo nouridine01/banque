@@ -87,6 +87,12 @@ public class VersementController {
 			if (dao.find(NumC) != null)
 			{
 				Bank.versement(NumC,Mont);	 
+				Alert info = new Alert(AlertType.INFORMATION);
+			    info.setTitle("Versement");
+			    info.setHeaderText("Versement effectue");
+			    info.showAndWait();
+			    Numerocompte.setText("");
+			    montant.setText("");
 			}
 			else
 			{
@@ -95,10 +101,10 @@ public class VersementController {
 		           info.setHeaderText("veuillez saisir des Informations valide");
 		           info.showAndWait();
 			}
-			App app = new App();
-			view="GestionClients";
-			titre="GESTION CLIENTS";
-			app.changeView(view, titre);
+//			App app = new App();
+//			view="GestionClient";
+//			titre="GESTION CLIENTS";
+//			app.changeView(view, titre);
 		}
 		
 	

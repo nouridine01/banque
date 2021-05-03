@@ -89,6 +89,8 @@ public class RetraitController {
 		    info.setTitle("Retrait");
 		    info.setHeaderText("Retrait effectue");
 		    info.showAndWait();
+		    NumeroCompte.setText("");
+		    Montant.setText("");
 		}
 		else
 		{
@@ -97,10 +99,10 @@ public class RetraitController {
 		    info.setHeaderText("veuillez saisir des Informations valides");
 		    info.showAndWait();
 		}
-			App app = new App();
-			view="AccueilAgent";
-			titre="ACCUEIL AGENT";
-			app.changeView(view, titre);
+//			App app = new App();
+//			view="AccueilAgent";
+//			titre="ACCUEIL AGENT";
+//			app.changeView(view, titre);
 		}
 		
 

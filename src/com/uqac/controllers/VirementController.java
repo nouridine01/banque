@@ -91,6 +91,13 @@ public class VirementController {
 			if (dao.find(NumCE) != null & dao.find(NumCB) != null & (Solde>Mont))
 			{
 				Bank.virement(NumCE, NumCB, Mont);	 
+				Alert info = new Alert(AlertType.INFORMATION);
+			    info.setTitle("Virement");
+			    info.setHeaderText("Virement effectue");
+			    info.showAndWait();
+			    CompteEmetteur.setText("");
+			    CompteBeneficiaire.setText("");
+			    Montant.setText("");
 			}
 			else
 			{

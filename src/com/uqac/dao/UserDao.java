@@ -72,7 +72,7 @@ public class UserDao extends DAO<User>{
 	public List<User> chercher(String mc) {
 		// TODO Auto-generated method stub
 		
-		Query query=TransactionManager.getEm().createQuery("select t from User t where t.nom like :mc or t.prenom like :mp"); 
+		Query query=TransactionManager.getEm().createQuery("select t from User t where t.login like :mc or t.telephone like :mp"); 
 		query.setParameter("mc", mc);
 		query.setParameter("mp", mc);
 		return query.getResultList();

@@ -35,7 +35,7 @@
         </content>
       </ScrollPane>
       <TextField fx:id="SearchTxt" layoutX="4.0" layoutY="29.0" promptText="Search Client" />
-      <Button fx:id="SearchBtn" layoutX="162.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-color: #E45652;" text="Search" textFill="WHITE" />
+      <Button fx:id="SearchBtn" layoutX="162.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-color: #E45652;" text="Search" textFill="WHITE" onAction="#SearchBtn"/>
       <Button fx:id="NouveauClient" layoutX="4.0" layoutY="378.0" mnemonicParsing="false" onAction="#NouveauClient" style="-fx-background-color: #E45652;" text="Nouveau Client" textFill="WHITE" />
       <Button fx:id="ModifierClient" layoutX="204.0" layoutY="378.0" mnemonicParsing="false" onAction="#ModifierClient" style="-fx-background-color: #E45652;" text="Modifier Client" textFill="WHITE" />
       <Button fx:id="SupprimerClient" layoutX="380.0" layoutY="378.0" mnemonicParsing="false" onAction="#SupprimerClient" style="-fx-background-color: #E45652;" text="Supprimer Client" textFill="WHITE" />
